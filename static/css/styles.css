@@ -1,7 +1,7 @@
 .page-header { 
-	border-bottom:none; 
+	border-bottom:none; /* remove line */
 }
 
-.navbar {
-	margin-bottom:0;
+body {
+  padding-top: 70px; /* Move down content because we have a fixed navbar that is 50px tall */
 }
