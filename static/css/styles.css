@@ -3,5 +3,5 @@
 }
 
 body {
-  padding-top: 70px; /* Move down content because we have a fixed navbar that is 50px tall */
+  padding-top: 50px; /* Move down content because we have a fixed navbar that is 50px tall */
 }
