@@ -5,3 +5,15 @@
 body {
   padding-top: 50px; /* Move down content because we have a fixed navbar that is 50px tall */
 }
+
+.jumbotron {
+	padding: 0;
+	margin-bottom: 0;
+}
+
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background-size: cover;
+}
