@@ -2,28 +2,26 @@
 	border-bottom:none; /* remove line */
 }
 
-html {
-	height: 100%;
-}
-
 body {
   padding-top: 50px; /* Move down content because we have a fixed navbar that is 50px tall */
-  height: 100%;
 }
 
 #videobg {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	width: auto;
-	height: 100%;
 	z-index: -1;
-	/*background: transparent url(video-bg.jpg) no-repeat;*/ /* reflet the first frame of the video */
-	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
-.jumbotron {
-	height: 100%;
-	background-color:transparent !important; /* transparent */
+#starter {
+	position: relative;
+	height: 600px;
+}
+
+.transparentbg {
+	background-color:transparent !important;
+}
+
+.whitecolor {
+	color: white;
 }
