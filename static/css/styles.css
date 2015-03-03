@@ -2,18 +2,28 @@
 	border-bottom:none; /* remove line */
 }
 
+html {
+	height: 100%;
+}
+
 body {
   padding-top: 50px; /* Move down content because we have a fixed navbar that is 50px tall */
+  height: 100%;
+}
+
+#videobg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	height: 100%;
+	z-index: -1;
+	/*background: transparent url(video-bg.jpg) no-repeat;*/ /* reflet the first frame of the video */
+	background-size: cover;
 }
 
 .jumbotron {
-	padding: 0;
-	margin-bottom: 0;
-}
-
-video#bgvid {
-  position: fixed; right: 0; bottom: 0;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: -100;
-  background-size: cover;
+	height: 100%;
+	background-color:transparent !important; /* transparent */
 }
