@@ -3,19 +3,36 @@
 }
 
 body {
-  padding-top: 50px; /* Move down content because we have a fixed navbar that is 50px tall */
+  padding-top: 70px; /* Move down content because we have a fixed navbar that is 50px tall */
 }
 
+.footer {
+	position: relative;
+  	padding-bottom: 20px;
+}
+
+/* transparent navbar */
+/*.navbar {
+   background-color: transparent;
+   background: transparent;
+}
+.navbar li { color: #000 } */
+
+.navbar-brand img {
+	max-width:100px; 
+	margin-top: -23px;
+}
+
+/* video starter */
+#starter {
+	position: relative;
+	height: 500px;
+}
 #videobg {
 	z-index: -1;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-}
-
-#starter {
-	position: relative;
-	height: 600px;
 }
 
 .transparentbg {
