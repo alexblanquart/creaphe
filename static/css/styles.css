@@ -57,3 +57,9 @@ body {
     width: 500px;
     height: 400px;
 }
+
+/* Carousel */
+.carousel-inner .active.left { left: -33%; }
+.carousel-inner .next        { left:  33%; }
+.carousel-inner .prev        { left: -33%; }
+.carousel-control.left,.carousel-control.right {background-image:none;}
