@@ -10,27 +10,6 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:300italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="static/css/font-awesome.min.css">
 <link rel="stylesheet" href="static/css/styles.css">
-
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var locations = new google.maps.LatLng(50.633333, 3.066667);
-        var mapOptions = {
-          center: locations,
-          zoom: 14,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-        var marker = new google.maps.Marker({
-			position: locations,
-			map: map,
-			title:"Lille"});
-		marker.setMap(map);	
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
 </head>
 
 <body>
@@ -52,51 +31,6 @@
 			</ul>
 		</div>
 	</nav>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">
-				<form class="form-horizontal" role="form" method="post" action="TODO">
-				    <div class="form-group">
-				        <label for="name" class="col-sm-2 control-label">Nom</label>
-				        <div class="col-sm-10">
-				            <input type="text" class="form-control" id="name" name="name" placeholder="Nom, prénom" value="">
-				        </div>
-				    </div>
-				    <div class="form-group">
-				        <label for="email" class="col-sm-2 control-label">Email</label>
-				        <div class="col-sm-10">
-				            <input type="email" class="form-control" id="email" name="email" placeholder="monemail@domaine.com" value="">
-				        </div>
-				    </div>
-				    <div class="form-group">
-				        <label for="object" class="col-sm-2 control-label">Objet</label>
-				        <div class="col-sm-10">
-				            <input type="text" class="form-control" id="object" name="object" placeholder="Objet du message" value="">
-				        </div>
-				    </div>
-				    <div class="form-group">
-				        <label for="message" class="col-sm-2 control-label">Message</label>
-				        <div class="col-sm-10">
-				            <textarea class="form-control" rows="4" name="message" placeholder="C'est à vous"></textarea>
-				        </div>
-				    </div>
-				    <div class="form-group">
-				        <div class="col-sm-10 col-sm-offset-2">
-				            <input id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary">
-				        </div>
-				    </div>
-				</form>
-			</div>
-			<div class="col-sm-6">
-				<address>
-  					<strong>Venez nous voir</strong><br>
-  					Lille
-				</address>
-				<div id="map-canvas"></div>
-			</div>
-		</div>
-	</div>
 
 	<footer class="footer text-center">
     	<div class="container">
@@ -131,5 +65,5 @@
     		</div>
       	</div>
     </footer>
-
+    
 </body>

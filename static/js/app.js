@@ -1,3 +1,4 @@
+/* Mansory */
 var container = document.querySelector('#mansory-container');
 var msnry;
 // initialize Masonry after all images have loaded
