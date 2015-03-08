@@ -2,28 +2,27 @@
 	border-bottom:none; /* remove line */
 }
 
+/* Navbar */
+.navbar {
+   padding: 10px 0px;
+}
+
+.navbar img {
+	margin-top: -30px;
+}
+
+/* Body */
 body {
   padding-top: 70px; /* Move down content because we have a fixed navbar that is 50px tall */
   font-family: 'Lato', sans-serif; font-weight:400; font-style:italic; /* super global font */
 }
 
+/* Footer */
 .footer {
 	margin-top: 10px; /* isolates a bit more from the rest */
 	padding: 50px 0px; /* make foot stands clearer */
 	background-color: #f5f5f5;
 	bottom: 0px; /* stick at the bottom of the page */
-}
-
-/* transparent navbar */
-/*.navbar {
-   background-color: transparent;
-   background: transparent;
-}
-.navbar li { color: #000 } */
-
-.navbar-brand img {
-	max-width:100px; 
-	margin-top: -23px;
 }
 
 /* video starter */
@@ -57,9 +56,3 @@ body {
     width: 500px;
     height: 400px;
 }
-
-/* Carousel */
-.carousel-inner .active.left { left: -33%; }
-.carousel-inner .next        { left:  33%; }
-.carousel-inner .prev        { left: -33%; }
-.carousel-control.left,.carousel-control.right {background-image:none;}
