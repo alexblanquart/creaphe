@@ -8,7 +8,7 @@
 }
 
 .navbar img {
-	margin-top: -30px;
+	margin-top: -29px;
 }
 
 /* Body */
@@ -47,8 +47,15 @@ body {
 
 /* Mansory */
 .mansory-item {
-	padding: 5px;
+	padding: 10px; /* separate a bit items */
+}
+
+#mansory-blog .mansory-item {
 	width: 50%;
+}
+
+#mansory-thanks .mansory-item {
+	width: 20%;	
 }
 
 /* Embedded google maps */

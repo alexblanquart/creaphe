@@ -1,5 +1,5 @@
 /* Mansory */
-var container = document.querySelector('#mansory-container');
+var container = document.querySelector('.mansory-container');
 var msnry;
 // initialize Masonry after all images have loaded
 imagesLoaded( container, function() {
@@ -11,7 +11,7 @@ imagesLoaded( container, function() {
 
 
 /* Carousel */
-$('#mutlicarousel .item').each(function(){
+/*$('#mutlicarousel .item').each(function(){
   var next = $(this).next();
   if (!next.length) {
     next = $(this).siblings(':first');
@@ -24,4 +24,4 @@ $('#mutlicarousel .item').each(function(){
   else {
   	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
-});
+});*/
