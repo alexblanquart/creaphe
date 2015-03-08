@@ -13,7 +13,7 @@
 
 /* Body */
 body {
-  padding-top: 70px; /* Move down content because we have a fixed navbar that is 50px tall */
+  padding-top: 80px; /* Move down content because of navbar */
   font-family: 'Lato', sans-serif; font-weight:400; font-style:italic; /* super global font */
 }
 
@@ -62,4 +62,10 @@ body {
 #map-canvas {
     width: 500px;
     height: 400px;
+}
+
+/* Profile image */
+.profile img {
+	height: 400px;
+	/*object-fit: contain;*/
 }
