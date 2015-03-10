@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:300italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="static/css/font-awesome.min.css">
+<link rel='stylesheet' href='static/css/fullcalendar.min.css' />
 <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
@@ -39,9 +40,8 @@
 		        		<span class="caret"></span>
 		        	</a>
 		          	<ul class="dropdown-menu" role="menu">
-			            <li><a href="#">Artistes et artisans</a></li>
-			            <li><a href="#">Boutique</a></li>
-		          	</ul>
+			            <li><a href="#">Les créatifs</a></li>
+			           </ul>
 		        </li>
 				<li><a href="blog.html">Blog</a></li>
 				<li><a href="join.html">Inscription</a></li>
@@ -52,7 +52,7 @@
 	<div id="starter">
 		<video id="videobg" autoplay loop muted preload="auto">
 	    	<!--<source src="static/videobg.mp4" type="video/mp4">-->
-	    	<source src="../videobg.mp4" type="video/mp4">
+	    	<source src="../content/videobg.mp4" type="video/mp4">
 	    </video>
 
 		<div class="jumbotron transparentbg whitecolor">
@@ -94,10 +94,25 @@
 		</div>
 	</div>
 
-	<div class="page-header text-center">
-  		<h1>Agenda</h1>
-  		<p class="lead">Des ateliers pour les petits comme les grands</p>
-	</div>	
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="page-header text-center">
+			  		<h1>Agenda</h1>
+			  		<p class="lead">Des ateliers pour les petits comme les grands</p>
+			  		<a class="btn btn-primary" data-toggle="collapse" href="#collapseAgenda" aria-expanded="false" aria-controls="collapseAgenda">Agenda</a>
+				</div>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="collapse" id="collapseAgenda">
+  					<div id='calendar'></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!---PLANNING-->
 
@@ -121,39 +136,57 @@
 			        	<div class="item active">
 			        		<div class="row">
 			        			<div class="col-sm-4">
-			        				<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
+			        					<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				</a>
 			        			</div>
 			        			<div class="col-sm-4">
-			        				<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
+			        					<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
 			        			</div>
 			        			<div class="col-sm-4">
-			        				<img data-src="holder.js/350x300/auto/#777:#555/">		
-			        			</div>
-			        		</div>
-			        	</div>
-			        	<div class="item">
-			          		<div class="row">
-			        			<div class="col-sm-4">
-			        				<img data-src="holder.js/350x300/auto/#777:#555/">		
-			        			</div>
-			        			<div class="col-sm-4">
-			        				<img data-src="holder.js/350x300/auto/#777:#555/">		
-			        			</div>
-			        			<div class="col-sm-4">
-			        				<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
+			        					<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
 			        			</div>
 			        		</div>
 			        	</div>
 			        	<div class="item">
 			          		<div class="row">
 			        			<div class="col-sm-4">
-			        				<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
+			        					<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
 			        			</div>
 			        			<div class="col-sm-4">
-			        				<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
+			        					<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
 			        			</div>
 			        			<div class="col-sm-4">
-			        				<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
+			        					<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
+			        			</div>
+			        		</div>
+			        	</div>
+			        	<div class="item">
+			          		<div class="row">
+			        			<div class="col-sm-4">
+			        				<a href="artist.html">
+			        					<img data-src="holder.js/350x300/auto/#777:#555/">
+			        				<a href="artist.html">
+			        			</div>
+			        			<div class="col-sm-4">
+			        				<a href="artist.html">
+			        					<img data-src="holder.js/350x300/auto/#777:#555/">
+			        				<a href="artist.html">
+			        			</div>
+			        			<div class="col-sm-4">
+			        				<a href="artist.html">
+			        					<img data-src="holder.js/350x300/auto/#777:#555/">		
+			        				<a href="artist.html">
 			        			</div>
 			        		</div>
 			        	</div>
@@ -175,10 +208,9 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-sm-12">
-    				<p class="lead"><strong>Créaphé</strong></p>z
+    				<p class="lead"><strong>Créaphé</strong></p>
     				<ul class="list-inline">
 						<li><p><strong><a href="blog.html">Blog</a></strong></p></li>
-						<li><p><strong><a href="founding.html">Magazine</a></strong></p></li>
 						<li><p><strong><a href="blog.html">S'inscrire à la newsletter</a></strong></p></li>
 					</ul>
 					<ul class="list-inline">
@@ -189,8 +221,6 @@
 						<li><p><strong><a href="thanks.html">Remerciements</a></strong></p></li>
 					</ul>
 					<ul class="list-inline">
-						<li><p class="text-uppercase"><strong>Statut associatif</strong></p></li>
-						<li><p class="text-uppercase"><strong>CGU</strong></p></li>
 						<li><p class="text-uppercase"><strong>Mentions légales</strong></p></li>
 						<li><p class="text-uppercase"><strong>Plan du site</strong></p></li>
 					</ul>
@@ -209,8 +239,15 @@
       	</div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script src='static/js/jquery.min.js'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<script src='static/js/moment.min.js'></script>
+	<script src='static/js/fullcalendar.min.js'></script>
+
+	<script src="static/js/mansory.min.js"></script>
+	<script src="static/js/imagesloaded.min.js"></script>
 	<script src="static/js/holder.min.js"></script>
 	<script src="static/js/app.js"></script>
 </body>
