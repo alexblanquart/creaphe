@@ -1,3 +1,6 @@
+@import url("featurettes.css");
+@import url("timeline.css");
+
 .page-header { 
 	border-bottom:none; /* remove line */
 }
@@ -38,6 +41,10 @@ body {
 
 .secondsection {
 	background-color: white;
+}
+
+.sectionimg {
+	height: 600px;
 }
 
 /* video starter */
