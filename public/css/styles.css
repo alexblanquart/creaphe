@@ -1,5 +1,6 @@
 @import url("featurettes.css");
 @import url("timeline.css");
+@import url("sections.css");
 
 .page-header { 
 	border-bottom:none; /* remove line */
