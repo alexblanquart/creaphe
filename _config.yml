@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Créaphé
+tagline:          Association
+description:      
+url:              http://www.creaphe.com
+baseurl:          /
+
+author:
+  name:           Alexandre Blanquart
+  url:            
+
+paginate:         1
+
+# Custom vars
+version:          0.0.1
+
+github:
+  repo:           
