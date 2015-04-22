@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Créaphé</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:300italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="static/css/font-awesome.min.css">
+<link rel="stylesheet" href="static/css/styles.css">
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var locations = new google.maps.LatLng(50.633333, 3.066667);
+        var mapOptions = {
+          center: locations,
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+			position: locations,
+			map: map,
+			title:"Lille"});
+		marker.setMap(map);	
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					<img src="static/img/logo.png">
+				</a>
+			</div>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="about.html">Notre projet</a></li>
+				<li><a href="funding.html">Nous soutenir</a></li>
+				<li class="dropdown">
+		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projets 
+		        		<span class="caret"></span>
+		        	</a>
+		          	<ul class="dropdown-menu" role="menu">
+			            <li><a href="#">Ateliers</a></li>
+			            <li><a href="#">Formations</a></li>
+		          	</ul>
+		        </li>
+				<li class="dropdown">
+		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Communauté 
+		        		<span class="caret"></span>
+		        	</a>
+		          	<ul class="dropdown-menu" role="menu">
+			            <li><a href="#">Artistes et artisans</a></li>
+			            <li><a href="#">Boutique</a></li>
+		          	</ul>
+		        </li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="join.html">Inscription</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<form class="form-horizontal" role="form" method="post" action="TODO">
+				    <div class="form-group">
+				        <label for="name" class="col-sm-2 control-label">Nom</label>
+				        <div class="col-sm-10">
+				            <input type="text" class="form-control" id="name" name="name" placeholder="Nom, prénom" value="">
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label for="email" class="col-sm-2 control-label">Email</label>
+				        <div class="col-sm-10">
+				            <input type="email" class="form-control" id="email" name="email" placeholder="monemail@domaine.com" value="">
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label for="object" class="col-sm-2 control-label">Objet</label>
+				        <div class="col-sm-10">
+				            <input type="text" class="form-control" id="object" name="object" placeholder="Objet du message" value="">
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label for="message" class="col-sm-2 control-label">Message</label>
+				        <div class="col-sm-10">
+				            <textarea class="form-control" rows="4" name="message" placeholder="C'est à vous"></textarea>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <div class="col-sm-10 col-sm-offset-2">
+				            <input id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary">
+				        </div>
+				    </div>
+				</form>
+			</div>
+			<div class="col-sm-6">
+				<address>
+  					<strong>Venez nous voir</strong><br>
+  					<i class="fa fa-home"></i> Lille<br>
+  					<strong>N'hésitez pas à nous appeler</strong><br>
+  					<i class="fa fa-phone"></i> Numéro
+				</address>
+				<div id="map-canvas"></div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer text-center">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-12">
+    				<p class="lead"><strong>Créaphé</strong></p>
+    				<ul class="list-inline">
+						<li><p><strong><a href="blog.html">Blog</a></strong></p></li>
+						<li><p><strong><a href="founding.html">Magazine</a></strong></p></li>
+						<li><p><strong><a href="blog.html">S'inscrire à la newsletter</a></strong></p></li>
+					</ul>
+					<ul class="list-inline">
+						<li><p><strong><a href="blog.html">Notre projet</a></strong></p></li>
+						<li><p><strong><a href="founding.html">Nous soutenir</a></strong></p></li>
+						<li><p><strong><a href="contact.html">Nous contacter</a></strong></p></li>
+						<li><p><strong><a href="join.html">Inscription</a></strong></p></li>
+						<li><p><strong><a href="thanks.html">Remerciements</a></strong></p></li>
+					</ul>
+					<ul class="list-inline">
+						<li><p class="text-uppercase"><strong>Statut associatif</strong></p></li>
+						<li><p class="text-uppercase"><strong>CGU</strong></p></li>
+						<li><p class="text-uppercase"><strong>Mentions légales</strong></p></li>
+						<li><p class="text-uppercase"><strong>Plan du site</strong></p></li>
+					</ul>
+
+    				<hr/>
+
+    				<p class="lead"><strong>Rejoignez-nous sur</strong></p>
+    				<ul class="list-inline">
+    					<li><i class="fa fa-facebook-square fa-2x"></i></li>
+						<li><i class="fa fa-pinterest-square fa-2x"></i></li>
+						<li><i class="fa fa-instagram fa-2x"></i></li>
+					</ul>
+					<p class="text-muted"><small>© 2015 Créaphé, All rights reserved</small></p>
+    			</div>
+    		</div>
+      	</div>
+    </footer>
+
+</body>

@@ -10,13 +10,7 @@ title:            Créaphé
 tagline:          Association
 description:      
 url:              http://www.creaphe.com
-
-# Navigation
-navigation:
-- title: Home
-  url: http://alexblanquart.github.io/creaphe/
-- title: Notre projet
-  url: http://alexblanquart.github.io/creaphe/about.html
+baseurl:          /
 
 author:
   name:           Alexandre Blanquart
