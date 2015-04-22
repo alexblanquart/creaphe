@@ -12,6 +12,13 @@ description:
 url:              http://www.creaphe.com
 baseurl:          http://alexblanquart.github.io/creaphe/
 
+# Navigation
+navigation:
+- title: Home
+  url: /index.html
+- title: Notre projet
+  url: /about.html
+
 author:
   name:           Alexandre Blanquart
   url:            

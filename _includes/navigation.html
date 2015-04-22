@@ -17,27 +17,15 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="{{ site.baseurl }}about.html">Notre projet</a></li>
-				<li><a href="funding.html">Nous soutenir</a></li>
-				<li class="dropdown">
-			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projets 
-			        	<span class="caret"></span>
-			        </a>
-			        <ul class="dropdown-menu" role="menu">
-				        <li><a href="#">Ateliers</a></li>
-				        <li><a href="#">Formations</a></li>
-			        </ul>
-			    </li>
-				<li class="dropdown">
-			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Communauté 
-			        	<span class="caret"></span>
-			        </a>
-			        <ul class="dropdown-menu" role="menu">
-				        <li><a href="#">Les créatifs</a></li>
-				    </ul>
-			    </li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="join.html">Inscription</a></li>
+				{% for link in site.navigation %}
+			      {% if page.url == link.url %}
+			      <li class="active">
+			      {% else %}
+			      <li>
+			      {% endif %}
+			      	<a href="{{link.url}}">{{link.title}}</a>
+			      </li>
+			    {% endfor %}
 			</ul>
 		</div>
 	</div>
