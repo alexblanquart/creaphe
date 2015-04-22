@@ -11,10 +11,10 @@
   <title></title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/bootstrap_flatly.min.css">
-  <link rel="stylesheet" href="/public/css/font-awesome.min.css">
-  <link rel='stylesheet' href="/public/css/fullcalendar.min.css">
-  <link rel="stylesheet" href="/public/css/styles.css">
+  <link rel="stylesheet" href="/creaphe/public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/creaphe/public/css/font-awesome.min.css">
+  <link rel='stylesheet' href="/creaphe/public/css/fullcalendar.min.css">
+  <link rel="stylesheet" href="/creaphe/public/css/styles.css">
 
 </head>
 
@@ -32,19 +32,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">
-				<img src="/public/img/logo.png">
+            <a class="navbar-brand" href="/creaphe/">
+				<img src="/creaphe/public/img/logo.png">
 			</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/project">Notre projet</a></li>
-				<li><a href="/">Nous soutenir</a></li>
-				<li><a href="/">Blog</a></li>
-				<li><a href="/">Inscription</a></li>
-				<li><a href="/contact">Nous contacter</a></li>
+				<li><a href="/creaphe/project">Notre projet</a></li>
+				<li><a href="/creaphe/">Nous soutenir</a></li>
+				<li><a href="/creaphe/">Blog</a></li>
+				<li><a href="/creaphe/">Inscription</a></li>
+				<li><a href="/creaphe/contact">Nous contacter</a></li>
 				<!--<li class="dropdown">
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projets 
 			        	<span class="caret"></span>
@@ -68,41 +68,27 @@
 	</div>
 </nav>
     
-    <header>
+    <section id="marketing">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <!--<img class="img-responsive" src="img/profile.png" alt="">-->
-                <div class="intro-text">
-                    <span class="name">L'association qui vous ressemble</span>
-                    <hr class="star-light">
-                    <span class="skills">Le fait-main, l'artisanat, la création par vous et pour vous</span>
-                </div>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#" class="btn btn-lg btn-outline">
+            <div class="col-lg-12 text-center">
+                <h1>L'association qui vous ressemble</h1>
+                <p class="lead">Le fait-main, l'artisanat, la création par vous et pour vous</p>
+                <a href="/creaphe/project" class="btn btn-lg btn-default">
                     <i class="fa fa-info"></i>&nbsp;&nbsp;En savoir plus
                 </a>
             </div>
         </div>
-
     </div>
-</header>
+</section>
 
 <section id="news">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-               	<h2>Actualités</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p>Evénements, artistes, show-room, ateliers du moment</p>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#" class="btn btn-lg btn-success">
+               	<h1>Actualités</h1>
+                <p class="lead">Evénements, artistes, show-room, ateliers du moment</p>
+                <a href="#" class="btn btn-lg btn-default disabled">
                     <i class="fa fa-spinner"></i>&nbsp;&nbsp;En cours de construction
                 </a>
             </div>
@@ -136,20 +122,13 @@
 	</div>
 </div>-->
 
-<section id="agenda" class="success">
+<section id="agenda">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-               	<h2>Agenda</h2>
-                <hr class="star-light">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p>Des ateliers pour les petits comme les grands</p>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#" class="btn btn-lg btn-outline">
+                <h1>Agenda</h1>
+                <p class="lead">Des ateliers pour les petits comme les grands</p>
+                <a href="#" class="btn btn-lg btn-default disabled">
                     <i class="fa fa-spinner"></i>&nbsp;&nbsp;En cours de construction
                 </a>
             </div>
@@ -180,16 +159,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-               	<h2>Notre communauté artistique</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p>L'art sous toutes ses formes</p>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#" class="btn btn-lg btn-success">
+                <h1>Notre communauté créative</h1>
+                <p class="lead">L'art sous toutes ses formes</p>
+                <a href="#" class="btn btn-lg btn-default disabled">
                     <i class="fa fa-spinner"></i>&nbsp;&nbsp;En cours de construction
                 </a>
             </div>
@@ -210,11 +182,12 @@
             <div class="row">
             	<div class="col-lg-8 col-lg-offset-2">
 					<ul class="list-inline">
-						<li><p><strong><a href="/project">Notre projet</a></strong></p></li>
-						<li><p><strong><a href="/">Nous soutenir</a></strong></p></li>
-                        <li><p><strong><a href="/">Blog</a></strong></p></li>
-						<li><p><strong><a href="/">Inscription</a></strong></p></li>
-                        <li><p><strong><a href="/contact">Nous contacter</a></strong></p></li>
+						<li><p><strong><a href="/creaphe/project">Notre projet</a></strong></p></li>
+                        <li><p><strong><a href="/creaphe/">La charte</a></strong></p></li>
+						<li><p><strong><a href="/creaphe/">Nous soutenir</a></strong></p></li>
+                        <li><p><strong><a href="/creaphe/">Blog</a></strong></p></li>
+						<li><p><strong><a href="/creaphe/">Inscription</a></strong></p></li>
+                        <li><p><strong><a href="/creaphe/contact">Nous contacter</a></strong></p></li>
 					</ul>
             	</div>
             </div>
@@ -232,10 +205,10 @@
 </footer>
 
 <!-- jQuery -->
-<script src="/public/js/jquery.min.js"></script>
+<script src="/creaphe/public/js/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="/public/js/bootstrap.min.js"></script>
+<script src="/creaphe/public/js/bootstrap.min.js"></script>
 
 
    <!-- <script src='/public/js/jquery.min.js'></script>

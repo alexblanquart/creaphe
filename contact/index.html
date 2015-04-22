@@ -23,25 +23,26 @@ title: Créaphé - Contact
       google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
-<header>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-                <p>N'hésitez pas à nous contacter</p>
+<section class="success">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>N'hésitez pas à nous contacter</h1>
+                <hr class="star-light">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-                <a href="mailto:bonjour.creaphe@gmail.com" class="btn btn-lg btn-success">
+            <div class="col-lg-6">
+                <p><a href="mailto:bonjour.creaphe@gmail.com" class="btn btn-sm btn-outline">
                     <i class="fa fa-envelope-o"></i>&nbsp;&nbsp;bonjour.creaphe@gmail.com
-                </a>
+                </a></p>
+                <p><a class="btn btn-sm btn-outline">
+                    <i class="fa fa-home"></i>Lille (à la recherche actuellement d'un local)
+                </a></p>
             </div>
-		</div>
-		<div class="row">
-			<div class="col-lg-6 col-lg-offset-3">
-				<p><i class="fa fa-home"></i>Lille (à la recherche actuellement d'un local)</p>
-				<div id="map-canvas"></div>
-			</div>
-		</div>
-	</div>
-</header>
+            <div class="col-lg-6">
+                <div id="map-canvas"></div>
+            </div>
+        </div>
+    </div>
+</section>
