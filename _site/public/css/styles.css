@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Lato', sans-serif; font-style:italic;
+
 }
 
 .navbar img {
@@ -11,17 +11,14 @@ body {
    	padding: 20px 0px;
 }
 
-/*span,
-p,
-a,
-h1,
+span,
 h2,
 h3,
 h4,
 h5,
 h6 {
     font-family: 'Lato', sans-serif; font-style:italic;
-}*/
+}
 
 hr.star-light,
 hr.star-primary {
@@ -159,5 +156,18 @@ footer .footer-below {
 }
 
 blockquote p {
-	font-family: 'Fanwood Text', serif;
+	/*font-family: 'Fanwood Text', serif;*/
+	font-family: 'Reenie Beanie', cursive;
+}
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+h1:after{
+	/*content: url("../img/tache_vert_2.png");*/
+	/*background-color: red; content:"\00a0";*/
+    /*padding: 0 20px;*/
+    margin-left: -20px; 
 }

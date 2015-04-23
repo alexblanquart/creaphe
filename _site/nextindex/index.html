@@ -8,7 +8,7 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>Créaphé - Contact</title>
+  <title></title>
 
   <!-- CSS -->
   <link href='http://fonts.googleapis.com/css?family=Quicksand|Lato|Reenie+Beanie|Pacifico' rel='stylesheet' type='text/css'>
@@ -56,53 +56,70 @@
 	</div>
 </nav>
     
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var locations = new google.maps.LatLng(50.633333, 3.066667);
-        var mapOptions = {
-          center: locations,
-          zoom: 14,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-        var marker = new google.maps.Marker({
-			position: locations,
-			map: map,
-			title:"Lille"});
-		marker.setMap(map);	
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-
-<section>
+    <section id="marketing">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Nous contacter</h1>
+                <h1>L'association qui vous ressemble</h1>
                 <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <p class="lead">Pour réaliser ce projet, nous avons besoin de vous et de votre soutien</p>
-                <p><a class="btn btn-sm btn-default">
-                    <i class="fa fa-facebook"></i>&nbsp;&nbsp;Page facebook
-                </a></p>
-                <p><a href="mailto:bonjour.creaphe@gmail.com" class="btn btn-sm btn-default">
-                    <i class="fa fa-envelope-o"></i>&nbsp;&nbsp;bonjour.creaphe@gmail.com
-                </a></p>
-                <p><a class="btn btn-sm btn-default">
-                    <i class="fa fa-home"></i>&nbsp;&nbsp;Lille (à la recherche actuellement d'un local)
-                </a></p>
-            </div>
-            <div class="col-lg-6">
-                <div id="map-canvas"></div>
+                <p class="lead">Le fait-main, l'artisanat, la création par vous et pour vous</p>
+                <a href="/creaphe/project" class="btn btn-lg btn-default">
+                    <i class="fa fa-info"></i>&nbsp;&nbsp;En savoir plus
+                </a>
             </div>
         </div>
     </div>
 </section>
+
+<section id="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+               	<h1>Actualités</h1>
+                <hr>
+                <p class="lead">Evénements, artistes, show-room, ateliers du moment</p>
+                <a href="#" class="btn btn-lg btn-default disabled">
+                    <i class="fa fa-spinner"></i>&nbsp;&nbsp;En cours de construction
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="agenda">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Agenda</h1>
+                <hr>
+                <p class="lead">Des ateliers pour les petits comme les grands</p>
+                <a href="#" class="btn btn-lg btn-default disabled">
+                    <i class="fa fa-spinner"></i>&nbsp;&nbsp;En cours de construction
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="community">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Notre communauté créative</h1>
+                <hr>
+                <p class="lead">L'art sous toutes ses formes</p>
+                <a href="#" class="btn btn-lg btn-default disabled">
+                    <i class="fa fa-spinner"></i>&nbsp;&nbsp;En cours de construction
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+	
+</body>
+
+</html>
 
   </body>
 
