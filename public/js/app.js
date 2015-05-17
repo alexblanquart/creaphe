@@ -8,13 +8,4 @@ $(document).ready(function() {
         });
     });
 
-  /* FullCalendar */
-  $('#calendar').fullCalendar({
-      height: "auto"
-  });
-
-  $('#collapseAgenda').on('shown.bs.collapse', function () {
-    $('#calendar').fullCalendar('today');
-  });
-
 });

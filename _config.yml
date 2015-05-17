@@ -10,7 +10,7 @@ title:            Créaphé
 tagline:          Association
 description:      
 url:              http://www.creaphe.com
-baseurl:          
+baseurl:          /
 
 author:
   name:           Alexandre Blanquart
